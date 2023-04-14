@@ -1,0 +1,1 @@
+export const YELLO_UMBERLLA_CDN = 'https://drive.google.com/file/d/1MUsJ7TOc2dLnrvJ_VFWVApTh1OVfkK3S/view'
