@@ -144,15 +144,15 @@ input {
 .isLoadingUmberlla {
   width: 60px;
   color: #f7c614;
-  animation: isloadingIcon 2s linear infinite, delay-spin 2s linear infinite;
+  animation: isloadingIcon 1.5s ease infinite
 }
 
 @keyframes isloadingIcon {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: rotate(0turn);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(0.5turn);
   }
 }
 @keyframes delay-spin {

@@ -15,6 +15,8 @@ const Umberlla = ({ changeBgColor }) => {
     const [buttonColor, setButtonColor] = useState('#f7c614')
     const [loading, setLoading] = useState(false);
     const [isActive, setIsActive] = useState(false)
+    const [isSpinning, setIsSpinning] = useState(true);
+
 
     const handleImageUpload = (e) => {
         setLoading(true);
@@ -29,6 +31,10 @@ const Umberlla = ({ changeBgColor }) => {
         changeBgColor(color);
     };
 
+    setTimeout(() => {
+        setIsSpinning(false);
+      }, 1000);
+      
     useEffect(() => {
         let timeout;
         if (logo) {
